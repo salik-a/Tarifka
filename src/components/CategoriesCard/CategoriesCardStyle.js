@@ -19,7 +19,7 @@ export default StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         backgroundColor: "white",
-        marginHorizontal: 15,
+        marginHorizontal: 5,
         marginVertical: 5,
         borderBottomLeftRadius: 50,
         borderTopStartRadius: 45,
@@ -27,12 +27,13 @@ export default StyleSheet.create({
         borderColor: "#aec4c7"
     },
     image: {
+        marginHorizontal: 10,
         width: 100,
         height: 100,
         resizeMode: "contain",
     },
     titleContainer: {
-        marginHorizontal: 10,
+        marginHorizontal: 20,
     },
     title: {
         fontSize: 20,
