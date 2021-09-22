@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Text, View, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { Text, View, Image, ScrollView, TouchableOpacity, Linking } from 'react-native';
 import useFetch from './../../hooks/useFetch/useFetch'
 import LottieView from 'lottie-react-native';
 import styles from './DetailStyle';
@@ -37,7 +37,7 @@ const Detail = ({ route }) => {
                 <View style={styles.buttonContainer}>
                     <TouchableOpacity
                         style={styles.button}
-                    //onPress={() => navigation.navigate("WatchPage", data.meals[0].strYoutube)}
+                        onPress={() => { Linking.openURL(data.meals[0].strYoutube) }}
                     >
                         <Text style={styles.buttonText}>Watch on Youtube</Text>
                     </TouchableOpacity>
